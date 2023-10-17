@@ -1,0 +1,18 @@
+site_name: Reverse Engineering 101
+
+# appearance info
+theme:
+  name: material
+
+# plugin info
+plugins:
+  # - optimize
+
+# additional info
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: 'https://github.com/zhsh9'
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/zhsh9" target="_blank" rel="noopener">zhsh</a>
