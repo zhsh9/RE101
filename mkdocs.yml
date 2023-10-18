@@ -68,6 +68,13 @@ nav:
     - index.md
   - Linux:
     - Linux/index.md
+    - Tools:
+      - Regular Expression: Linux/tools/regexp.md
+      - grep: Linux/tools/grep.md
+      - sed: Linux/tools/sed.md
+      - awk: Linux/tools/awk.md
+    - Shell:
+      - Linux/shell/index.md
   - Reverse Engineering:
     - RE/index.md
     - Programming Languages:
