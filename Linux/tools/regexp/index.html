@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../C/">
+        <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../../../Pentest/">
+        <link rel="next" href="../grep/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>C++ Programming - Red Team 101</title>
+        <title>Regular Expression - Red Team 101</title>
       
     
     
@@ -76,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#regular-expression" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              C++ Programming
+              Regular Expression
             
           </span>
         </div>
@@ -219,11 +224,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../Linux/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
     
@@ -239,13 +246,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../RE/" class="md-tabs__link">
           
   
     
@@ -378,6 +383,8 @@
       
   
   
+    
+  
   
     
     
@@ -397,17 +404,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Linux/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -424,7 +431,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Linux
@@ -437,6 +444,8 @@
                 
   
   
+    
+  
   
     
     
@@ -453,12 +462,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -472,7 +481,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Tools
@@ -483,9 +492,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../Linux/tools/regexp/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Regular Expression
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -494,6 +523,40 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-regexp" class="md-nav__link">
+    Basic regexp
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensive-regexp" class="md-nav__link">
+    Extensive regexp
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -505,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/tools/grep/" class="md-nav__link">
+      <a href="../grep/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -525,7 +588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/tools/sed/" class="md-nav__link">
+      <a href="../sed/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -545,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/tools/awk/" class="md-nav__link">
+      <a href="../awk/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -593,7 +656,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../Linux/shell/" class="md-nav__link ">
+            <a href="../../shell/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -633,8 +696,6 @@
       
   
   
-    
-  
   
     
     
@@ -652,17 +713,17 @@
       
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../../RE/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -679,7 +740,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Reverse Engineering
@@ -692,8 +753,6 @@
                 
   
   
-    
-  
   
     
     
@@ -706,12 +765,12 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -725,7 +784,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Programming Languages
@@ -738,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../C/" class="md-nav__link">
+      <a href="../../../RE/langs/C/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -756,16 +815,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../RE/langs/C%2B%2B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -774,7 +826,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -869,6 +920,30 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-regexp" class="md-nav__link">
+    Basic regexp
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extensive-regexp" class="md-nav__link">
+    Extensive regexp
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -883,9 +958,99 @@
                   
 
 
-  <h1>C++ Programming</h1>
-
-
+<h1 id="regular-expression">Regular Expression<a class="headerlink" href="#regular-expression" title="Permanent link">&para;</a></h1>
+<h2 id="basic-regexp">Basic regexp<a class="headerlink" href="#basic-regexp" title="Permanent link">&para;</a></h2>
+<ul>
+<li>匹配字符</li>
+<li>匹配次数</li>
+<li>位置锚定</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>匹配行开头</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配行结尾</td>
+</tr>
+<tr>
+<td>^$</td>
+<td>空行</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配一个字符</td>
+</tr>
+<tr>
+<td>\</td>
+<td>转义字符</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前一个字符0次及以上</td>
+</tr>
+<tr>
+<td>.*</td>
+<td>匹配所有内容</td>
+</tr>
+<tr>
+<td>^.*</td>
+<td>匹配任意多个字符开头的内容</td>
+</tr>
+<tr>
+<td>.*$</td>
+<td>匹配任意多个字符结尾的内容</td>
+</tr>
+<tr>
+<td>[abc]</td>
+<td>匹配集合内任意一个字符</td>
+</tr>
+<tr>
+<td>[^abc]</td>
+<td>匹配除了集合内任意一个字符</td>
+</tr>
+</tbody>
+</table>
+<h2 id="extensive-regexp">Extensive regexp<a class="headerlink" href="#extensive-regexp" title="Permanent link">&para;</a></h2>
+<p><code>grep -E</code></p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>匹配前一个字符1次及以上</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前一个字符0次或1次</td>
+</tr>
+<tr>
+<td>|</td>
+<td>或者</td>
+</tr>
+<tr>
+<td>()</td>
+<td>分组过滤，分组的内容可后续"\n"引用</td>
+</tr>
+<tr>
+<td>a{n} a{n,m} a{n,} a{,m}</td>
+<td>匹配前一个字符特定次数</td>
+</tr>
+</tbody>
+</table>
 
 
 
