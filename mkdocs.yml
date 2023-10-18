@@ -70,7 +70,7 @@ theme:
 #     - 1. basic knowledge/index.md
 nav:
   - Home:
-    - Home/index.md
+    - index.md
   - Basic Knowledge:
     - Basic Knowledge/index.md
     - Programming Languages:
