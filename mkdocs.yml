@@ -44,12 +44,12 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     # - navigation.sections
     # - navigation.expand
     - navigation.path
     - navigation.indexes
-    - toc.follow
+    # - toc.follow
     - navigation.top
     - header.autohide
     ##plugin: search
@@ -64,12 +64,18 @@ theme:
 
 # content navigation
 # nav:
-#   - Section1:
-#     - section1/index.md
-#     - section1/p1.md
-#   - Section2:
-#     - section2/index.md
-#     - section2/p1.md
+#   - Home:
+#     - 0. home/index.md
+#   - Basic Knowledge:
+#     - 1. basic knowledge/index.md
+nav:
+  - Home:
+    - Home/index.md
+  - Basic Knowledge:
+    - Basic Knowledge/index.md
+    - Programming Languages:
+      - C Programming: Basic Knowledge/langs/C.md
+      - C++ Programming: Basic Knowledge/langs/C++.md
 
 
 # plugin info
@@ -81,6 +87,10 @@ plugins:
 
 # markdown
 markdown_extensions:
+
+  # toc
+  - toc:
+      permalink: true
   
   # admonitions
   - admonition
@@ -105,6 +115,7 @@ markdown_extensions:
       alternate_style: true
   
   - tables
+
   - footnotes
   
   # formatting
