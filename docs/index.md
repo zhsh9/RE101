@@ -4,7 +4,7 @@ hide:
     - toc
 ---
 
-# 环境配置
+# Environment Configuration
 
 - ida pro
 - x96dbg

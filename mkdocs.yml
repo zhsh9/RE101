@@ -1,4 +1,4 @@
-site_name: Reverse Engineering 101
+site_name: Red Team 101
 
 
 # appearance info
@@ -63,20 +63,18 @@ theme:
 
 
 # content navigation
-# nav:
-#   - Home:
-#     - 0. home/index.md
-#   - Basic Knowledge:
-#     - 1. basic knowledge/index.md
 nav:
   - Home:
     - index.md
-  - Basic Knowledge:
-    - Basic Knowledge/index.md
+  - Linux:
+    - Linux/index.md
+  - Reverse Engineering:
+    - RE/index.md
     - Programming Languages:
-      - C Programming: Basic Knowledge/langs/C.md
-      - C++ Programming: Basic Knowledge/langs/C++.md
-
+      - C Programming: RE/langs/C.md
+      - C++ Programming: RE/langs/C++.md
+  - Pentest:
+    - Pentest/index.md
 
 # plugin info
 plugins:

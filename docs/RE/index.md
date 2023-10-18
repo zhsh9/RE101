@@ -1,7 +1,9 @@
-# Basics for RE
+---
+title: RE
+---
 
 - [ ] Langs
-    * [ ] C
+    * [x] C
     * [ ] C++
     * [ ] Python
 - [ ] Data Structure

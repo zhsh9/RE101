@@ -470,7 +470,7 @@ fseek(stream, offset, origin)
 - SEEK_END
 - SEEK_SET
 
-```
+```c
 char * ReadFile(char * szFilePath)
 {
 	FILE * pFile;
