@@ -75,6 +75,8 @@ nav:
       - awk: Linux/tools/awk.md
     - Shell:
       - Linux/shell/index.md
+  - Crypto:
+    - Crypto/index.md
   - Reverse Engineering:
     - RE/index.md
     - Programming Languages:
@@ -82,6 +84,26 @@ nav:
       - C++ Programming: RE/langs/C++.md
   - Pentest:
     - Pentest/index.md
+    - Reconnaissance:
+      - Pentest/1.recon/index.md
+      - Web: Pentest/1.recon/web.md
+      - Path: Pentest/1.recon/path.md
+      - OS: Pentest/1.recon/os.md
+      - SMB: Pentest/1.recon/smb.md
+      - DNS: Pentest/1.recon/dns.md
+      - CDN: Pentest/1.recon/cdn.md
+      - WAF: Pentest/1.recon/waf.md
+      - Asset: Pentest/1.recon/asset.md
+      - Web Source Code: Pentest/1.recon/web_source_code.md
+      - Website Info: Pentest/1.recon/website_info.md
+    - Reverse Shell:
+      - Pentest/2.rshell/index.md
+    - Start a Quick Server:
+      - Pentest/3.quick_server/index.md
+    - Services:
+      - Pentest/4.services/index.md
+    - Vulnerabilities:
+      - Pentest/5.vulns/index.md
 
 # plugin info
 plugins:
