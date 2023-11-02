@@ -96,14 +96,32 @@ nav:
       - Asset: Pentest/1.recon/asset.md
       - Web Source Code: Pentest/1.recon/web_source_code.md
       - Website Info: Pentest/1.recon/website_info.md
+    - A Quick Server:
+      - Pentest/3.quick_server/index.md
+    - A Better Shell:
+      - Pentest/2.0.better_shell/index.md
     - Reverse Shell:
       - Pentest/2.rshell/index.md
-    - Start a Quick Server:
-      - Pentest/3.quick_server/index.md
     - Services:
       - Pentest/4.services/index.md
     - Vulnerabilities:
       - Pentest/5.vulns/index.md
+    - Priviledge Escalation:
+      - Pentest/6.priviledge_escalation/index.md
+      - Linux:
+        - enumeration: Pentest/6.priviledge_escalation/linux/1.enumeration.md
+        - shadow: Pentest/6.priviledge_escalation/linux/2.shadow.md
+        - passwd: Pentest/6.priviledge_escalation/linux/3.passwd.md
+        - sudo environment variables: Pentest/6.priviledge_escalation/linux/4.sudo_env_vars.md
+        - schedule jobs: Pentest/6.priviledge_escalation/linux/5.schedule_jobs.md
+        - suid: Pentest/6.priviledge_escalation/linux/6.suid.md
+        - password and keys: Pentest/6.priviledge_escalation/linux/7.password_and_keys.md
+        - nfs: Pentest/6.priviledge_escalation/linux/8.nfs.md
+        - kernel exploits: Pentest/6.priviledge_escalation/linux/9.kernel_exploits.md
+        - doas related: Pentest/6.priviledge_escalation/linux/10.doas.md
+        - motd mechanism: Pentest/6.priviledge_escalation/linux/11.motd_mechanism.md
+        - prng for ssh private key: Pentest/6.priviledge_escalation/linux/12.prng_for_ssh.md
+      #- Windows:
 
 # plugin info
 plugins:
