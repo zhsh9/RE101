@@ -121,6 +121,7 @@ nav:
         - doas related: Pentest/6.priviledge_escalation/linux/10.doas.md
         - motd mechanism: Pentest/6.priviledge_escalation/linux/11.motd_mechanism.md
         - prng for ssh private key: Pentest/6.priviledge_escalation/linux/12.prng_for_ssh.md
+      - Linux Sudo Cmds: Pentest/6.priviledge_escalation/linux_sudo.md
       #- Windows:
 
 # plugin info
