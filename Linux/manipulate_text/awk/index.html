@@ -12,7 +12,7 @@
         <link rel="prev" href="../sed/">
       
       
-        <link rel="next" href="../../shell/">
+        <link rel="next" href="../cut/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -75,6 +75,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#synopsis" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -493,6 +498,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -576,6 +585,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    awk
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -586,6 +606,91 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#synopsis" class="md-nav__link">
+    SYNOPSIS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#option" class="md-nav__link">
+    Option
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program-variable" class="md-nav__link">
+    Program variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program-structure" class="md-nav__link">
+    Program structure
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cut/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cut
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    tr
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1942,6 +2047,42 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#synopsis" class="md-nav__link">
+    SYNOPSIS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#option" class="md-nav__link">
+    Option
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program-variable" class="md-nav__link">
+    Program variable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#program-structure" class="md-nav__link">
+    Program structure
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1957,7 +2098,113 @@
 
   <h1>awk</h1>
 
-
+<h2 id="synopsis">SYNOPSIS<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>awk<span class="w"> </span><span class="o">[</span>-W<span class="w"> </span>option<span class="o">]</span><span class="w"> </span><span class="o">[</span>-F<span class="w"> </span>value<span class="o">]</span><span class="w"> </span><span class="o">[</span>-v<span class="w"> </span><span class="nv">var</span><span class="o">=</span>value<span class="o">]</span><span class="w"> </span><span class="o">[</span>--<span class="o">]</span><span class="w"> </span><span class="s1">&#39;program text&#39;</span><span class="w"> </span><span class="o">[</span>file<span class="w"> </span>...<span class="o">]</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>awk<span class="w"> </span><span class="o">[</span>-W<span class="w"> </span>option<span class="o">]</span><span class="w"> </span><span class="o">[</span>-F<span class="w"> </span>value<span class="o">]</span><span class="w"> </span><span class="o">[</span>-v<span class="w"> </span><span class="nv">var</span><span class="o">=</span>value<span class="o">]</span><span class="w"> </span><span class="o">[</span>-f<span class="w"> </span>program-file<span class="o">]</span><span class="w"> </span><span class="o">[</span>--<span class="o">]</span><span class="w"> </span><span class="o">[</span>file<span class="w"> </span>...<span class="o">]</span>
+</span></code></pre></div>
+<p><strong>第n列的信息</strong></p>
+<ul>
+<li><code>$0</code></li>
+<li><code>$1</code>, <code>$2</code>, …</li>
+<li>…, <code>$(NF-1)</code>, <code>$NF</code></li>
+</ul>
+<p><strong>分割符</strong></p>
+<ul>
+<li>输入分隔符：默认空格，变量名FS(Field Seperator)</li>
+<li>输出分隔符：OFS(Output Field Seperator)</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>awk<span class="w"> </span>-F<span class="w"> </span><span class="s2">&quot;:&quot;</span><span class="w"> </span><span class="s1">&#39;{print $1, $2}&#39;</span><span class="w"> </span>filename
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>awk<span class="w"> </span>-v<span class="w"> </span><span class="nv">FS</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="w"> </span><span class="s1">&#39;{print $1, $2}&#39;</span><span class="w"> </span>filename
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>awk<span class="w"> </span>-v<span class="w"> </span><span class="nv">OFS</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="w"> </span><span class="s1">&#39;{print $1, $2}&#39;</span><span class="w"> </span>filename
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>awk<span class="w"> </span><span class="s1">&#39;BEGIN {OFS=&quot;,&quot;} {print $1, $2}&#39;</span><span class="w"> </span>filename
+</span></code></pre></div>
+<h2 id="option">Option<a class="headerlink" href="#option" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-F val</td>
+<td>FS, field separator</td>
+</tr>
+<tr>
+<td>-v var=val</td>
+<td>assign val to program variable var</td>
+</tr>
+<tr>
+<td>-f file</td>
+<td>program text is read from file</td>
+</tr>
+<tr>
+<td>--</td>
+<td>indicate unambiguous end of opts</td>
+</tr>
+</tbody>
+</table>
+<h2 id="program-variable">Program variable<a class="headerlink" href="#program-variable" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Program variable</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FS</td>
+<td>Field separator, ' '</td>
+</tr>
+<tr>
+<td>OFS</td>
+<td>Output field separator, ' '</td>
+</tr>
+<tr>
+<td>RS</td>
+<td>Record separator, initially '\n'</td>
+</tr>
+<tr>
+<td>ORS</td>
+<td>Output record separator, '\n'</td>
+</tr>
+<tr>
+<td>NF</td>
+<td>Number of field</td>
+</tr>
+<tr>
+<td>NR</td>
+<td>Number of record</td>
+</tr>
+<tr>
+<td>FNR</td>
+<td>File number of record</td>
+</tr>
+<tr>
+<td>FILENAME</td>
+<td>Current filename</td>
+</tr>
+<tr>
+<td>ARGC</td>
+<td>arg count</td>
+</tr>
+<tr>
+<td>ARGV</td>
+<td>arg vector</td>
+</tr>
+</tbody>
+</table>
+<h2 id="program-structure">Program structure<a class="headerlink" href="#program-structure" title="Permanent link">&para;</a></h2>
+<p><strong>Program</strong> = sequence of pattern {action} pairs and user function definitions</p>
+<p><strong>Pattern:</strong></p>
+<ul>
+<li>BEGIN</li>
+<li>END</li>
+<li>expr</li>
+<li>expr, expr</li>
+</ul>
 
 
 
