@@ -68,11 +68,13 @@ nav:
     - index.md
   - Linux:
     - Linux/index.md
-    - Tools:
-      - Regular Expression: Linux/tools/regexp.md
-      - grep: Linux/tools/grep.md
-      - sed: Linux/tools/sed.md
-      - awk: Linux/tools/awk.md
+    - Regular Expression: Linux/regexp.md
+    - Manipulate Text:
+      - grep: Linux/manipulate_text/grep.md
+      - sed: Linux/manipulate_text/sed.md
+      - awk: Linux/manipulate_text/awk.md
+      - cut: Linux/manipulate_text/cut.md
+      - tr: Linux/manipulate_text/tr.md
     - Shell:
       - Linux/shell/index.md
   - Crypto:
@@ -96,12 +98,13 @@ nav:
       - Asset: Pentest/1.recon/asset.md
       - Web Source Code: Pentest/1.recon/web_source_code.md
       - Website Info: Pentest/1.recon/website_info.md
-    - A Quick Server:
+    - Quick Server:
       - Pentest/3.quick_server/index.md
-    - A Better Shell:
+    - Better Shell:
       - Pentest/2.0.better_shell/index.md
     - Reverse Shell:
       - Pentest/2.rshell/index.md
+      - Detail of bash rshell: Pentest/2.rshell/detail_of_bash_rshell.md
     - Services:
       - Pentest/4.services/index.md
     - Vulnerabilities:

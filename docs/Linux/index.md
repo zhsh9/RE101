@@ -1,8 +1,9 @@
 # Details
 
-tools:
+regular expression
 
-- [x] regexp
+manipulate text:
+
 - [x] grep
 - [x] sed
 - [ ] awk
