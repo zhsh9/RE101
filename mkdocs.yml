@@ -126,6 +126,12 @@ nav:
         - prng for ssh private key: Pentest/6.priviledge_escalation/linux/12.prng_for_ssh.md
       - Linux Sudo Cmds: Pentest/6.priviledge_escalation/linux_sudo.md
       #- Windows:
+  - Writeups:
+    - Write-ups/index.md
+    - Network Config: Write-ups/vulnhub/network-config.md
+    - vulnhub:
+      - Write-ups/vulnhub/KIOPTRIX LEVEL 1 (1).md
+      - Write-ups/vulnhub/KIOPTRIX LEVEL 1.1 (2).md
 
 # plugin info
 plugins:
