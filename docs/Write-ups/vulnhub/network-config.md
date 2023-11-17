@@ -7,7 +7,7 @@
 
 all connect to WLAN
 
-- for wsl2
+- wsl2
 
 ```bash
 # on win
@@ -20,7 +20,7 @@ sudo ip addr add 192.168.1.99/24 broadcast 192.168.1.255 dev eth0
 sudo ip route add 0.0.0.0/0 via 192.168.1.1 dev eth0
 ```
 
-- for vmware, bridge mode (same adapter of wsl2)
+- vmware machine: bridge mode (a hyper-v virtual switch)
 
 ## wsl2 bridge config
 

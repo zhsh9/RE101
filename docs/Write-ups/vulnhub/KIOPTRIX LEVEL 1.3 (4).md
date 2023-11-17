@@ -423,7 +423,7 @@ udp        0      0 0.0.0.0:68              0.0.0.0:*                           
 #### mysql - udf
 
 - validate lib_mysqludf_sys.so file
-- validate usefull config: **secure_file_priv**
+- validate useful config: **secure_file_priv**
 
 ```
 robert@Kioptrix4:/$ whereis lib_mysqludf_sys.so

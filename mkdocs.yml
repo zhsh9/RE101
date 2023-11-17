@@ -116,7 +116,7 @@ nav:
         - shadow: Pentest/6.priviledge_escalation/linux/2.shadow.md
         - passwd: Pentest/6.priviledge_escalation/linux/3.passwd.md
         - sudo environment variables: Pentest/6.priviledge_escalation/linux/4.sudo_env_vars.md
-        - schedule jobs: Pentest/6.priviledge_escalation/linux/5.schedule_jobs.md
+        - schedule tasks: Pentest/6.priviledge_escalation/linux/5.schedule_jobs.md
         - suid: Pentest/6.priviledge_escalation/linux/6.suid.md
         - password and keys: Pentest/6.priviledge_escalation/linux/7.password_and_keys.md
         - nfs: Pentest/6.priviledge_escalation/linux/8.nfs.md
@@ -129,11 +129,12 @@ nav:
   - Writeups:
     - Write-ups/index.md
     - Network Config: Write-ups/vulnhub/network-config.md
-    - vulnhub:
+    - VulnHub:
       - Write-ups/vulnhub/KIOPTRIX LEVEL 1 (1).md
       - Write-ups/vulnhub/KIOPTRIX LEVEL 1.1 (2).md
       - Write-ups/vulnhub/KIOPTRIX LEVEL 1.2 (3).md
       - Write-ups/vulnhub/KIOPTRIX LEVEL 1.3 (4).md
+      - Write-ups/vulnhub/KIOPTRIX 2014 (5).md
 
 # plugin info
 plugins:
