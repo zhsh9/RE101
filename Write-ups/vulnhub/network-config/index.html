@@ -2135,6 +2135,8 @@
       
         
       
+        
+      
     
     
     
@@ -2245,6 +2247,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KIOPTRIX%202014%20%285%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KIOPTRIX 2014 (5)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2330,7 +2352,7 @@
 <h2 id="network">Network<a class="headerlink" href="#network" title="Permanent link">&para;</a></h2>
 <p>all connect to WLAN</p>
 <ul>
-<li>for wsl2</li>
+<li>wsl2</li>
 </ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># on win</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Get-NetAdapter
@@ -2342,7 +2364,7 @@
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>sudo<span class="w"> </span>ip<span class="w"> </span>route<span class="w"> </span>add<span class="w"> </span><span class="m">0</span>.0.0.0/0<span class="w"> </span>via<span class="w"> </span><span class="m">192</span>.168.1.1<span class="w"> </span>dev<span class="w"> </span>eth0
 </span></code></pre></div>
 <ul>
-<li>for vmware, bridge mode (same adapter of wsl2)</li>
+<li>vmware machine: bridge mode (a hyper-v virtual switch)</li>
 </ul>
 <h2 id="wsl2-bridge-config">wsl2 bridge config<a class="headerlink" href="#wsl2-bridge-config" title="Permanent link">&para;</a></h2>
 <p>instead of changing ip addr using ip command, change config file of wsl2 on windows:</p>
