@@ -2133,6 +2133,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#create-hyper-v-virtual-switch" class="md-nav__link">
+    create hyper-v virtual switch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#wsl2-bridge-config" class="md-nav__link">
     wsl2 bridge config
   </a>
@@ -2624,6 +2631,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#create-hyper-v-virtual-switch" class="md-nav__link">
+    create hyper-v virtual switch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#wsl2-bridge-config" class="md-nav__link">
     wsl2 bridge config
   </a>
@@ -2669,6 +2683,10 @@
 <ul>
 <li>vmware machine: bridge mode (a hyper-v virtual switch)</li>
 </ul>
+<h2 id="create-hyper-v-virtual-switch">create hyper-v virtual switch<a class="headerlink" href="#create-hyper-v-virtual-switch" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20231123030636213" src="../network-config.assets/image-20231123030636213.png" /></p>
+<p><img alt="image-20231123030653980" src="../network-config.assets/image-20231123030653980.png" /></p>
+<p><img alt="image-20231123030742172" src="../network-config.assets/image-20231123030742172.png" /></p>
 <h2 id="wsl2-bridge-config">wsl2 bridge config<a class="headerlink" href="#wsl2-bridge-config" title="Permanent link">&para;</a></h2>
 <p>instead of changing ip addr using ip command, change config file of wsl2 on windows:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[wsl2]
@@ -2678,7 +2696,7 @@
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
 </span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>[wsl2]
 </span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>networkingMode=bridged
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>vmSwitch=WSL
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>vmSwitch=WSL-Switch
 </span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>ipv6=true
 </span></code></pre></div>
 
