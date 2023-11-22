@@ -1,9 +1,3 @@
-## Machine Info
-
-**Tags:**
-
-Web, Network, Vulnerability Assessment, Databases, Injection, Custom Applications, Protocols, Source Code Analysis, Apache, PostgreSQL, FTP, PHP, Reconnaissance, Password Cracking, SUDO Exploitation, SQL Injection, Remote Code Execution, Clear Text Credentials, Anonymous/Guest Access
-
 ## Recon
 
 ```bash

@@ -144,6 +144,7 @@ nav:
         - Write-ups/thb/starting_point/Unified.md
       - Active Machines:
         - Write-ups/thb/active_machines/Keeper.md
+        - Write-ups/thb/active_machines/Clicker.md
 
 # plugin info
 plugins:
