@@ -79,6 +79,7 @@ nav:
       - Linux/shell/index.md
   - Crypto:
     - Crypto/index.md
+    - Generate Password: Crypto/gen_passwd.md
   - Reverse Engineering:
     - RE/index.md
     - Programming Languages:
@@ -135,6 +136,14 @@ nav:
       - Write-ups/vulnhub/KIOPTRIX LEVEL 1.2 (3).md
       - Write-ups/vulnhub/KIOPTRIX LEVEL 1.3 (4).md
       - Write-ups/vulnhub/KIOPTRIX 2014 (5).md
+    - HackTheBox:
+      - Starting Point:
+        - Write-ups/thb/starting_point/Archetype.md
+        - Write-ups/thb/starting_point/Oopsie.md
+        - Write-ups/thb/starting_point/Vaccine.md
+        - Write-ups/thb/starting_point/Unified.md
+      - Active Machines:
+        - Write-ups/thb/active_machines/Keeper.md
 
 # plugin info
 plugins:
