@@ -22,6 +22,14 @@ sudo ip route add 0.0.0.0/0 via 192.168.1.1 dev eth0
 
 - vmware machine: bridge mode (a hyper-v virtual switch)
 
+## create hyper-v virtual switch
+
+![image-20231123030636213](./network-config.assets/image-20231123030636213.png)
+
+![image-20231123030653980](./network-config.assets/image-20231123030653980.png)
+
+![image-20231123030742172](./network-config.assets/image-20231123030742172.png)
+
 ## wsl2 bridge config
 
 instead of changing ip addr using ip command, change config file of wsl2 on windows:
@@ -34,6 +42,6 @@ swap=0
 
 [wsl2]
 networkingMode=bridged
-vmSwitch=WSL
+vmSwitch=WSL-Switch
 ipv6=true
 ```
