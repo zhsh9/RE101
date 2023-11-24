@@ -145,6 +145,8 @@ nav:
       - Active Machines:
         - Write-ups/thb/active_machines/Keeper.md
         - Write-ups/thb/active_machines/Clicker.md
+        - Write-ups/thb/active_machines/Zipping.md
+        - Drive (Hard): Write-ups/thb/active_machines/Drive.md
 
 # plugin info
 plugins:
