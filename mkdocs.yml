@@ -142,11 +142,14 @@ nav:
         - Write-ups/thb/starting_point/Oopsie.md
         - Write-ups/thb/starting_point/Vaccine.md
         - Write-ups/thb/starting_point/Unified.md
-      - Active Machines:
+      - Linux Boxes:
+        - Write-ups/thb/linux/Lame.md
+      - Active Boxes:
         - Write-ups/thb/active_machines/Keeper.md
         - Write-ups/thb/active_machines/Clicker.md
         - Write-ups/thb/active_machines/Zipping.md
         - Drive (Hard): Write-ups/thb/active_machines/Drive.md
+        - Devvortex (no root yet): Write-ups/thb/active_machines/Devvortex.md
 
 # plugin info
 plugins:

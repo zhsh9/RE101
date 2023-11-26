@@ -48,7 +48,7 @@
 
 ??? Tip "Linux Boxes"
 
-    - [ ] Lame
+    - [x] Lame
     - [ ] brainfuck
     - [ ] shocker
     - [ ] bashed
@@ -213,3 +213,5 @@
     - [x] Clicker
     - [x] Zipping
     - [x] Drive
+    - [ ] Cybermonday
+    - [ ] Devvortex
