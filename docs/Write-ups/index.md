@@ -105,6 +105,15 @@
     - [ ] Paper
     - [ ] Talkative
     - [ ] Seventeen
+    - [ ] Busqueda
+    - [ ] UpDown
+    - [ ] Cereal
+    - [ ] Broker
+    - [ ] Intentions
+    - [ ] Soccer
+    - [ ] Mentor
+    - [ ] Cerberus
+    - [ ] Quick
 
 ??? Tip "Windows Boxes"
 
@@ -141,6 +150,15 @@
     - [ ] Timelapse
     - [ ] StreamIO
     - [ ] Scrambled
+    - [ ] Escape
+    - [ ] Flight
+    - [ ] Blackfield
+    - [ ] Absolute
+    - [ ] Outdated
+    - [ ] Atom
+    - [ ] Aero
+    - [ ] Cerberus
+    - [ ] Multimaster
 
 ??? Tip "More Challenging Boxes"
 
@@ -161,42 +179,21 @@
     - [ ] Sniper [Windows]
     - [ ] Control [Windows]
     - [ ] October [Linux]
-    - [ ] Mango [Linux]
     - [ ] Nest [Windows]
     - [ ] Book [Linux]
     - [ ] Sauna [Windows]
     - [ ] Cascade [Windows]
     - [ ] Querier [Windows]
-    - [ ] Quick [Linux]
-    - [ ] BlackField [Windows]
-    - [ ] APT [Windows]
-    - [ ] Atom [Windows]
     - [ ] BreadCrumbs [Windows]
     - [ ] Monitors [Linux]
     - [ ] Dynstr [Linux]
     - [ ] PivotAPI [Windows]
     - [ ] Pikaboo [Linux]
     - [ ] Monteverde [Windows]
-    - [ ] Writer [Linux]
-    - [ ] Forge [Linux]
     - [ ] Stacked [Linux]
     - [ ] Backdoor [Linux]
     - [ ] Search [Windows]
     - [ ] Undetected [Linux] (More like an IR box)
-
-??? Tip "Updated Boxes 2022"
-
-    - [ ] Backdoor [Linux]
-    - [ ] Search [Windows]
-    - [ ] Pandora [Linux]
-    - [ ] Meta [Linux]
-    - [ ] Paper [Linux]
-    - [ ] Acute [Windows]
-    - [ ] Timelapse [Windows]
-    - [ ] Talkative [Linux]
-    - [ ] StreamIO [Windows]
-    - [ ] Seventeen [Linux]
-    - [ ] Scrambled [Linux]
 
 ### Other Boxes
 
@@ -207,7 +204,7 @@
     - [x] Vaccine
     - [x] Unified
 
-??? Tip "Active machines"
+??? Tip "Open Beta Season III"
 
     - [x] Keeper
     - [x] Clicker
