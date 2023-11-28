@@ -18,7 +18,7 @@
     
     
       
-        <title>Devvortex (no root yet) - Red Team 101</title>
+        <title>Devvortex - Red Team 101</title>
       
     
     
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Devvortex (no root yet)
+              Devvortex
             
           </span>
         </div>
@@ -2758,7 +2758,7 @@
           
   
   <span class="md-ellipsis">
-    Devvortex (no root yet)
+    Devvortex
   </span>
   
 
@@ -2769,7 +2769,7 @@
         
   
   <span class="md-ellipsis">
-    Devvortex (no root yet)
+    Devvortex
   </span>
   
 
@@ -2807,12 +2807,45 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#80-joomla" class="md-nav__link">
+    80 - joomla
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#privilege-escalation" class="md-nav__link">
     Privilege Escalation
   </a>
+  
+    <nav class="md-nav" aria-label="Privilege Escalation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#www-data-logan" class="md-nav__link">
+    www-data -&gt; logan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logan-root" class="md-nav__link">
+    logan -&gt; root
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2891,12 +2924,45 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#80-joomla" class="md-nav__link">
+    80 - joomla
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#privilege-escalation" class="md-nav__link">
     Privilege Escalation
   </a>
+  
+    <nav class="md-nav" aria-label="Privilege Escalation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#www-data-logan" class="md-nav__link">
+    www-data -&gt; logan
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logan-root" class="md-nav__link">
+    logan -&gt; root
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2915,13 +2981,133 @@
                   
 
 
-  <h1>Devvortex (no root yet)</h1>
+  <h1>Devvortex</h1>
 
-<p>Current stage: Apport 2.20.11, Ubuntu 20.04</p>
 <h2 id="machine-info">Machine Info<a class="headerlink" href="#machine-info" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20231128232453970" src="../Devvortex.assets/image-20231128232453970.png" /></p>
 <h2 id="recon">Recon<a class="headerlink" href="#recon" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>PORT   STATE SERVICE VERSION
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.9 (Ubuntu Linux; protocol 2.0)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>| ssh-hostkey:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|   3072 48:ad:d5:b8:3a:9f:bc:be:f7:e8:20:1e:f6:bf:de:ae (RSA)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>|   256 b7:89:6c:0b:20:ed:49:b2:c1:86:7c:29:92:74:1c:1f (ECDSA)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>|_  256 18:cd:9d:08:a6:21:a8:b8:b6:f7:9f:8d:40:51:54:fb (ED25519)
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>80/tcp open  http    nginx 1.18.0 (Ubuntu)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>|_http-title: Did not follow redirect to http://devvortex.htb/
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>|_http-server-header: nginx/1.18.0 (Ubuntu)
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>Aggressive OS guesses: Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Linux 5.0 - 5.4 (93%)
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>No exact OS matches for host (test conditions non-ideal).
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Network Distance: 2 hops
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></code></pre></div>
+<ul>
+<li>attack vector: 80 - http</li>
+<li>devvortex.htb - nothing</li>
+<li>subdomain enum</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>===============================================================
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Starting gobuster in VHOST enumeration mode
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>===============================================================
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Found: dev.devvortex.htb Status: 200 [Size: 23221]
+</span></code></pre></div>
+<ul>
+<li>http://dev.devvortex.htb</li>
+</ul>
+<p><img alt="image-20231128232614190" src="../Devvortex.assets/image-20231128232614190.png" /></p>
+<ul>
+<li>Joomla</li>
+</ul>
+<p><img alt="image-20231128232633583" src="../Devvortex.assets/image-20231128232633583.png" /></p>
 <h2 id="foothold">Foothold<a class="headerlink" href="#foothold" title="Permanent link">&para;</a></h2>
+<h3 id="80-joomla">80 - joomla<a class="headerlink" href="#80-joomla" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20231128232738739" src="../Devvortex.assets/image-20231128232738739.png" /></p>
+<ul>
+<li>user: admin, joomla 4.2.6, db: mysql, postgresql</li>
+<li>searchsploit joomla exp</li>
+</ul>
+<p><img alt="image-20231128232920635" src="../Devvortex.assets/image-20231128232920635.png" /></p>
+<ul>
+<li><a href="https://www.exploit-db.com/exploits/51334">Joomla! v4.2.8 - Unauthenticated information disclosure - PHP webapps Exploit (exploit-db.com)</a></li>
+</ul>
+<p><img alt="image-20231128233007917" src="../Devvortex.assets/image-20231128233007917.png" /></p>
+<ul>
+<li>cred: <strong>lewis:P4ntherg0t1n5r3c0n##</strong> -&gt; login ok</li>
+</ul>
+<p><img alt="image-20231128233039993" src="../Devvortex.assets/image-20231128233039993.png" /></p>
+<p><img alt="image-20231128233044492" src="../Devvortex.assets/image-20231128233044492.png" /></p>
+<ul>
+<li>users: <strong>lewis</strong>, <strong>logan</strong></li>
+<li><strong>editor template php file</strong> to get web shell</li>
+</ul>
+<p><img alt="image-20231128233106679" src="../Devvortex.assets/image-20231128233106679.png" /></p>
+<ul>
+<li>poc:</li>
+</ul>
+<p><img alt="image-20231128233115371" src="../Devvortex.assets/image-20231128233115371.png" /></p>
+<ul>
+<li>curl local reverse shell file to execute while listening 1234 port on local -&gt; www-data <strong>get shell</strong></li>
+</ul>
+<p><img alt="image-20231128233202334" src="../Devvortex.assets/image-20231128233202334.png" /></p>
 <h2 id="privilege-escalation">Privilege Escalation<a class="headerlink" href="#privilege-escalation" title="Permanent link">&para;</a></h2>
+<h3 id="www-data-logan">www-data -&gt; logan<a class="headerlink" href="#www-data-logan" title="Permanent link">&para;</a></h3>
+<ul>
+<li>enum</li>
+</ul>
+<p><img alt="image-20231128233249383" src="../Devvortex.assets/image-20231128233249383.png" /></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>www-data@devvortex:/home/logan$<span class="w"> </span>cat<span class="w"> </span>/etc/passwd<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>bash
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cat<span class="w"> </span>/etc/passwd<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>bash
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>root:x:0:0:root:/root:/bin/bash
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>logan:x:1000:1000:,,,:/home/logan:/bin/bash
+</span></code></pre></div>
+<ul>
+<li><code>netstat -tunl</code> -&gt; 3306 <strong>mysql</strong> serice enbale</li>
+<li>connect mysql using <strong>lewis</strong> cred in Joomla</li>
+</ul>
+<p><img alt="image-20231128233423327" src="../Devvortex.assets/image-20231128233423327.png" /></p>
+<p><img alt="image-20231128233426499" src="../Devvortex.assets/image-20231128233426499.png" /></p>
+<ul>
+<li>hash of logan password -&gt; hashcat to crack</li>
+</ul>
+<p><img alt="image-20231128233452744" src="../Devvortex.assets/image-20231128233452744.png" /></p>
+<ul>
+<li>cred: <strong>logan:tequieromucho</strong></li>
+</ul>
+<h3 id="logan-root">logan -&gt; root<a class="headerlink" href="#logan-root" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>sudo -l</code> -&gt; attack vector</li>
+</ul>
+<p><img alt="image-20231128233515229" src="../Devvortex.assets/image-20231128233515229.png" /></p>
+<ul>
+<li>searchsploit -&gt; 49572 [x], 37088 [x]</li>
+</ul>
+<p><img alt="image-20231128233549339" src="../Devvortex.assets/image-20231128233549339.png" /></p>
+<p><img alt="image-20231128233619360" src="../Devvortex.assets/image-20231128233619360.png" /></p>
+<ul>
+<li>offical repo information gathering: <a href="https://github.com/canonical/apport">canonical/apport: Apport intercepts Program crashes, collects debugging information about the crash and the operating system environment, and sends it to bug trackers in a standardized form. It also offers the user to report a bug about a package, with again collecting as much information about it as possible. (github.com)</a></li>
+<li>seeking code changes from commits:</li>
+</ul>
+<p><img alt="image-20231128233714980" src="../Devvortex.assets/image-20231128233714980.png" /></p>
+<p><img alt="image-20231128233837700" src="../Devvortex.assets/image-20231128233837700.png" /></p>
+<ul>
+<li><a href="https://bugs.launchpad.net/ubuntu/+source/apport/+bug/2016023">Bug #2016023 “viewing an apport-cli crash with default pager cou...” : Bugs : apport package : Ubuntu (launchpad.net)</a></li>
+</ul>
+<p><img alt="image-20231128233849093" src="../Devvortex.assets/image-20231128233849093.png" /></p>
+<ul>
+<li>also checking this poc from git commit page (version 2.26.1)</li>
+</ul>
+<p><img alt="image-20231128233917247" src="../Devvortex.assets/image-20231128233917247.png" /></p>
+<ul>
+<li>poc: <a href="https://github.com/canonical/apport/commit/e5f78cc89f1f5888b6a56b785dddcb0364c48ecb">fix: Do not run sensible-pager as root if using sudo/pkexec · canonical/apport@e5f78cc (github.com)</a></li>
+</ul>
+<p><img alt="image-20231128233933119" src="../Devvortex.assets/image-20231128233933119.png" /></p>
+<ul>
+<li>exp</li>
+</ul>
+<p><img alt="image-20231128233938291" src="../Devvortex.assets/image-20231128233938291.png" /></p>
+<p><img alt="image-20231128233948748" src="../Devvortex.assets/image-20231128233948748.png" /></p>
+<p><img alt="image-20231128233952258" src="../Devvortex.assets/image-20231128233952258.png" /></p>
+<p><strong>Hint</strong>: open source program -&gt; check repo and commits, versions, logs, news about this program -&gt; get detailed info of it</p>
 
 
 
