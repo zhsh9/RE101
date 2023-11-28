@@ -144,6 +144,8 @@ nav:
         - Write-ups/thb/starting_point/Unified.md
       - Linux Boxes:
         - Write-ups/thb/linux/Lame.md
+        - Brainfuck (Insane): Write-ups/thb/linux/Brainfuck.md
+        - Write-ups/thb/linux/Shocker.md
       - Active Boxes:
         - Write-ups/thb/active_machines/Keeper.md
         - Write-ups/thb/active_machines/Clicker.md

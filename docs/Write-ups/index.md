@@ -49,7 +49,7 @@
 ??? Tip "Linux Boxes"
 
     - [x] Lame
-    - [ ] brainfuck
+    - [x] brainfuck
     - [ ] shocker
     - [ ] bashed
     - [ ] nibbles
