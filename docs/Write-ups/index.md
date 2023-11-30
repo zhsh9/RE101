@@ -51,7 +51,7 @@
     - [x] Lame
     - [x] brainfuck
     - [x] Shocker
-    - [ ] Bashed
+    - [x] Bashed
     - [ ] Nibbles
     - [ ] Beep
     - [ ] Cronos
