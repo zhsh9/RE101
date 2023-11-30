@@ -211,4 +211,4 @@
     - [x] Zipping
     - [x] Drive
     - [ ] Cybermonday
-    - [ ] Devvortex
+    - [x] Devvortex
