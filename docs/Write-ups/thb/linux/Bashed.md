@@ -1,5 +1,7 @@
 ## Machine Info
 
+![image-20231201052647155](./Bashed.assets/image-20231201052647155.png)
+
 ## Recon
 
 ```
