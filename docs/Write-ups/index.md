@@ -50,19 +50,19 @@
 
     - [x] Lame
     - [x] brainfuck
-    - [ ] shocker
-    - [ ] bashed
-    - [ ] nibbles
-    - [ ] beep
-    - [ ] cronos
-    - [ ] nineveh
-    - [ ] sense
-    - [ ] solidstate
-    - [ ] node
-    - [ ] valentine
-    - [ ] poison
-    - [ ] sunday
-    - [ ] tartarsauce
+    - [x] Shocker
+    - [ ] Bashed
+    - [ ] Nibbles
+    - [ ] Beep
+    - [ ] Cronos
+    - [ ] Nineveh
+    - [ ] Sense
+    - [ ] Solidstate
+    - [ ] Node
+    - [ ] Valentine
+    - [ ] Poison
+    - [ ] Sunday
+    - [ ] Tartarsauce
     - [ ] Irked
     - [ ] Friendzone
     - [ ] Swagshop
