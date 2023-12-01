@@ -2716,6 +2716,26 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explore-2-vulnerable-services" class="md-nav__link">
+    explore 2 vulnerable services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combine-them-together-to-get-user-shell" class="md-nav__link">
+    combine them together to get user shell
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3038,6 +3058,26 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explore-2-vulnerable-services" class="md-nav__link">
+    explore 2 vulnerable services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combine-them-together-to-get-user-shell" class="md-nav__link">
+    combine them together to get user shell
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3074,9 +3114,49 @@
 <h2 id="machine-info">Machine Info<a class="headerlink" href="#machine-info" title="Permanent link">&para;</a></h2>
 <p><img alt="image-20231201084248046" src="../Sau.assets/image-20231201084248046.png" /></p>
 <h2 id="recon">Recon<a class="headerlink" href="#recon" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20231201160321848" src="../Sau.assets/image-20231201160321848.png" /></p>
+<p><img alt="image-20231201160324706" src="../Sau.assets/image-20231201160324706.png" /></p>
+<p><img alt="image-20231201160331245" src="../Sau.assets/image-20231201160331245.png" /></p>
+<ul>
+<li>open source repo: https://github.com/darklynx/request-baskets, Version: <strong>1.2.1</strong></li>
+</ul>
 <h2 id="foothold">Foothold<a class="headerlink" href="#foothold" title="Permanent link">&para;</a></h2>
+<h3 id="explore-2-vulnerable-services">explore 2 vulnerable services<a class="headerlink" href="#explore-2-vulnerable-services" title="Permanent link">&para;</a></h3>
+<p><img alt="image-20231201160408907" src="../Sau.assets/image-20231201160408907.png" /></p>
+<ul>
+<li>POC: SSRF Vuln [y]</li>
+</ul>
+<p><img alt="image-20231201160413640" src="../Sau.assets/image-20231201160413640.png" /></p>
+<ul>
+<li>new a brasket -&gt; forward this site to another site 127.0.0.1:<strong>80</strong> (filtered port)</li>
+</ul>
+<p><img alt="image-20231201160522797" src="../Sau.assets/image-20231201160522797.png" /></p>
+<p><img alt="image-20231201160530093" src="../Sau.assets/image-20231201160530093.png" /></p>
+<ul>
+<li>
+<p>80 port's service: <strong>Maltail 0.53</strong>; </p>
+</li>
+<li>
+<p><strong>vuln</strong>: the <code>username</code> parameter of the login page doesn't properly sanitize the input, allowing an attacker to inject OS commands</p>
+</li>
+<li>
+<p><a href="https://github.com/spookier/Maltrail-v0.53-Exploit/tree/main">spookier/Maltrail-v0.53-Exploit: RCE Exploit For Maltrail-v0.53 (github.com)</a></p>
+</li>
+</ul>
+<p><img alt="image-20231201160604804" src="../Sau.assets/image-20231201160604804.png" /></p>
+<h3 id="combine-them-together-to-get-user-shell">combine them together to get user shell<a class="headerlink" href="#combine-them-together-to-get-user-shell" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://github.com/zhsh9/Request-Baskets-v1.2.1-Trigger-Maltrail-v0.53-Exploit">zhsh9/Request-Baskets-v1.2.1-Trigger-Maltrail-v0.53-Exploit: HTB Sau POC: RCE exploit for Maltrail v0.53 triggered by Request Baskets v1.2.1 (github.com)</a></li>
+</ul>
+<p><img alt="image-20231201160728796" src="../Sau.assets/image-20231201160728796.png" /></p>
 <h2 id="privilege-escalation">Privilege Escalation<a class="headerlink" href="#privilege-escalation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>sudo -l</code> -&gt; systemctrl sudo -&gt; less-like -&gt; !sh</li>
+</ul>
+<p><img alt="image-20231201160801031" src="../Sau.assets/image-20231201160801031.png" /></p>
+<p><img alt="image-20231201160804011" src="../Sau.assets/image-20231201160804011.png" /></p>
 <h2 id="exploit-chain">Exploit Chain<a class="headerlink" href="#exploit-chain" title="Permanent link">&para;</a></h2>
+<p>SSRF -&gt; forward 80 serice -&gt; RCE -&gt; get user shell -&gt; sudo systemctl -&gt; get root shell</p>
 
 
 
