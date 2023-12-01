@@ -146,6 +146,8 @@ nav:
         - Write-ups/thb/linux/Lame.md
         - Brainfuck (Insane): Write-ups/thb/linux/Brainfuck.md
         - Write-ups/thb/linux/Shocker.md
+        - Write-ups/thb/linux/Bashed.md
+        - Write-ups/thb/linux/Nibbles.md
       - Open Beta Season III:
         - Write-ups/thb/active_machines/Keeper.md
         - Write-ups/thb/active_machines/Clicker.md

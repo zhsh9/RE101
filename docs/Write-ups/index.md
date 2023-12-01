@@ -52,7 +52,7 @@
     - [x] brainfuck
     - [x] Shocker
     - [x] Bashed
-    - [ ] Nibbles
+    - [x] Nibbles
     - [ ] Beep
     - [ ] Cronos
     - [ ] Nineveh
