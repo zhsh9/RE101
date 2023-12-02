@@ -3,7 +3,7 @@
 ??? Tip "Linux Boxes"
 
     - [x] Lame
-    - [x] brainfuck
+    - [x] Brainfuck (Insane)
     - [x] Shocker
     - [x] Bashed
     - [x] Nibbles
@@ -163,8 +163,8 @@
     - [x] Keeper
     - [x] Clicker
     - [x] Zipping
-    - [x] Drive
-    - [ ] Cybermonday
+    - [x] Drive (Hard)
+    - [x] Cybermonday (Hard)
     - [x] Devvortex
     - [x] Sau
     - [x] CozyHosting

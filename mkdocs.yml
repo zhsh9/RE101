@@ -150,6 +150,7 @@ nav:
         - Devvortex: Write-ups/thb/active_machines/Devvortex.md
         - Write-ups/thb/active_machines/Sau.md
         - Write-ups/thb/active_machines/CozyHosting.md
+        - Cybermonday (Hard): Write-ups/thb/active_machines/Cybermonday.md
     - VulnHub:
       - Previous Versions:
         - Kioptrix Level 1 (1): Write-ups/vulnhub/KIOPTRIX LEVEL 1 (1).md
