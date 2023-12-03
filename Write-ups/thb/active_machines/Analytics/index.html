@@ -2826,12 +2826,45 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cve-2023-38646" class="md-nav__link">
+    CVE-2023-38646
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#privilege-escalation" class="md-nav__link">
     Privilege Escalation
   </a>
+  
+    <nav class="md-nav" aria-label="Privilege Escalation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#container-user-priv" class="md-nav__link">
+    container -&gt; user priv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metalytics-root" class="md-nav__link">
+    metalytics -&gt; root
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3226,12 +3259,45 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cve-2023-38646" class="md-nav__link">
+    CVE-2023-38646
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#privilege-escalation" class="md-nav__link">
     Privilege Escalation
   </a>
+  
+    <nav class="md-nav" aria-label="Privilege Escalation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#container-user-priv" class="md-nav__link">
+    container -&gt; user priv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metalytics-root" class="md-nav__link">
+    metalytics -&gt; root
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3262,9 +3328,67 @@
 <h2 id="machine-info">Machine Info<a class="headerlink" href="#machine-info" title="Permanent link">&para;</a></h2>
 <p><img alt="image-20231203210649467" src="../Analytics.assets/image-20231203210649467.png" /></p>
 <h2 id="recon">Recon<a class="headerlink" href="#recon" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>PORT   STATE SERVICE VERSION
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>| ssh-hostkey:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|   256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f (ECDSA)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>|_  256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>80/tcp open  http    nginx 1.18.0 (Ubuntu)
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>|_http-server-header: nginx/1.18.0 (Ubuntu)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>|_http-title: Did not follow redirect to http://analytical.htb/
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>Aggressive OS guesses: Linux 5.0 (96%), Linux 4.15 - 5.8 (96%), Linux 5.3 - 5.4 (95%), Linux 2.6.32 (95%), Linux 5.0 - 5.5 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>No exact OS matches for host (test conditions non-ideal).
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>Network Distance: 2 hops
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</span></code></pre></div>
+<ul>
+<li>OS: Ubuntu 22.04 Jammy</li>
+<li>Domain: <a href="http://data.analytical.htb/">http://analytical.htb/</a>, http://data.analytical.htb/</li>
+<li>Path and subdomain: nothing</li>
+<li>whatweb</li>
+</ul>
+<p><img alt="image-20231204010026108" src="../Analytics.assets/image-20231204010026108.png" /></p>
 <h2 id="foothold">Foothold<a class="headerlink" href="#foothold" title="Permanent link">&para;</a></h2>
+<h3 id="cve-2023-38646">CVE-2023-38646<a class="headerlink" href="#cve-2023-38646" title="Permanent link">&para;</a></h3>
+<p><strong>Detail</strong>: Metabase Pre-Auth RCE</p>
+<ul>
+<li>
+<p><a href="https://github.com/shamo0/CVE-2023-38646-PoC?source=post_page-----866220684396--------------------------------">https://github.com/shamo0/CVE-2023-38646-PoC</a></p>
+</li>
+<li>
+<p>https://github.com/m3m0o/metabase-pre-auth-rce-poc</p>
+</li>
+<li><code>setup-token</code> checking</li>
+</ul>
+<p><img alt="image-20231204010206698" src="../Analytics.assets/image-20231204010206698.png" /></p>
+<ul>
+<li>get a shell</li>
+</ul>
+<p><img alt="image-20231204010243603" src="../Analytics.assets/image-20231204010243603.png" /></p>
 <h2 id="privilege-escalation">Privilege Escalation<a class="headerlink" href="#privilege-escalation" title="Permanent link">&para;</a></h2>
+<h3 id="container-user-priv">container -&gt; user priv<a class="headerlink" href="#container-user-priv" title="Permanent link">&para;</a></h3>
+<ul>
+<li>check ip address -&gt; this is inside a container</li>
+</ul>
+<p><img alt="image-20231204010318699" src="../Analytics.assets/image-20231204010318699.png" /></p>
+<ul>
+<li>check contrainer's environment to obtain USER and PASS: <strong>metalytics:An4lytics_ds20223#</strong></li>
+</ul>
+<p><img alt="image-20231204010352603" src="../Analytics.assets/image-20231204010352603.png" /></p>
+<p><img alt="image-20231204010355841" src="../Analytics.assets/image-20231204010355841.png" /></p>
+<ul>
+<li><strong>ssh</strong> to conn metalytics</li>
+</ul>
+<p><img alt="image-20231204010424968" src="../Analytics.assets/image-20231204010424968.png" /></p>
+<h3 id="metalytics-root">metalytics -&gt; root<a class="headerlink" href="#metalytics-root" title="Permanent link">&para;</a></h3>
+<ul>
+<li>enum: <code>uname -a</code> kernel version 6.2.0 and recon info: Ubuntu 22.04 Jammy -&gt; GameOver Ubuntu Privilege Escalation: <strong>CVE-2023-2640</strong> + <strong>CVE-2023-32629</strong></li>
+<li><a href="https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629">g1vi/CVE-2023-2640-CVE-2023-32629: GameOver(lay) Ubuntu Privilege Escalation (github.com)</a></li>
+</ul>
+<p><img alt="image-20231204010739857" src="../Analytics.assets/image-20231204010739857.png" /></p>
 <h2 id="exploit-chain">Exploit Chain<a class="headerlink" href="#exploit-chain" title="Permanent link">&para;</a></h2>
+<p>Metabase Pre-Auth RCE -&gt; get a container shell -&gt; user cred -&gt; get a user shell -&gt; GameOver(lay) priv esca -&gt; root shell</p>
 
 
 
