@@ -143,14 +143,19 @@ nav:
         - Write-ups/thb/linux/Bashed.md
         - Write-ups/thb/linux/Nibbles.md
       - Open Beta Season III:
-        - Write-ups/thb/active_machines/Keeper.md
-        - Write-ups/thb/active_machines/Clicker.md
-        - Write-ups/thb/active_machines/Zipping.md
-        - Drive (Hard): Write-ups/thb/active_machines/Drive.md
-        - Devvortex: Write-ups/thb/active_machines/Devvortex.md
-        - Write-ups/thb/active_machines/Sau.md
-        - Write-ups/thb/active_machines/CozyHosting.md
-        - Cybermonday (Hard): Write-ups/thb/active_machines/Cybermonday.md
+        - Linux Boxes:
+          - Write-ups/thb/active_machines/Keeper.md
+          - Write-ups/thb/active_machines/Clicker.md
+          - Write-ups/thb/active_machines/Zipping.md
+          - Drive (Hard): Write-ups/thb/active_machines/Drive.md
+          - Devvortex: Write-ups/thb/active_machines/Devvortex.md
+          - Write-ups/thb/active_machines/Sau.md
+          - Write-ups/thb/active_machines/CozyHosting.md
+          - Cybermonday (Hard): Write-ups/thb/active_machines/Cybermonday.md
+          - Write-ups/thb/active_machines/Analytics.md
+          - Write-ups/thb/active_machines/Codify.md
+        - Windows Boxes:
+          - Write-ups/thb/active_machines/Hospital.md
     - VulnHub:
       - Previous Versions:
         - Kioptrix Level 1 (1): Write-ups/vulnhub/KIOPTRIX LEVEL 1 (1).md

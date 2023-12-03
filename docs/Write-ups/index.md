@@ -160,6 +160,8 @@
 
 ??? Tip "Open Beta Season III"
 
+    **Linux**
+
     - [x] Keeper
     - [x] Clicker
     - [x] Zipping
@@ -168,6 +170,12 @@
     - [x] Devvortex
     - [x] Sau
     - [x] CozyHosting
+    - [x] Analytics
+    - [x] Codify
+
+    **Windows**
+
+    - [ ] Hospital
 
 ## vulnhub
 
