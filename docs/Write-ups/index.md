@@ -7,7 +7,7 @@
     - [x] Shocker
     - [x] Bashed
     - [x] Nibbles
-    - [ ] Beep
+    - [x] Beep
     - [ ] Cronos
     - [ ] Nineveh
     - [ ] Sense
@@ -172,6 +172,7 @@
     - [x] CozyHosting
     - [x] Analytics
     - [x] Codify
+    - [ ] Ouija
 
     **Windows**
 
