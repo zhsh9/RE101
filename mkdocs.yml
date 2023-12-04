@@ -142,6 +142,8 @@ nav:
         - Write-ups/thb/linux/Shocker.md
         - Write-ups/thb/linux/Bashed.md
         - Write-ups/thb/linux/Nibbles.md
+        - Write-ups/thb/linux/Beep.md
+        - Write-ups/thb/linux/Cronos.md
       - Open Beta Season III:
         - Linux Boxes:
           - Write-ups/thb/active_machines/Keeper.md
