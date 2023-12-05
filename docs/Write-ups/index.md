@@ -177,7 +177,7 @@
     **Windows**
 
     - [x] Hospital
-    - [ ] Authority
+    - [x] Authority
     - [ ] Manager
     - [ ] Visual
 
