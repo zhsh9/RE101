@@ -156,8 +156,12 @@ nav:
           - Cybermonday (Hard): Write-ups/thb/active_machines/Cybermonday.md
           - Write-ups/thb/active_machines/Analytics.md
           - Write-ups/thb/active_machines/Codify.md
+          - Ouija (Hard): Write-ups/thb/active_machines/Ouija.md
         - Windows Boxes:
           - Write-ups/thb/active_machines/Hospital.md
+          - Write-ups/thb/active_machines/Authority.md
+          - Write-ups/thb/active_machines/Manager.md
+          - Write-ups/thb/active_machines/Visual.md
     - VulnHub:
       - Previous Versions:
         - Kioptrix Level 1 (1): Write-ups/vulnhub/KIOPTRIX LEVEL 1 (1).md

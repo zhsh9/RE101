@@ -172,11 +172,14 @@
     - [x] CozyHosting
     - [x] Analytics
     - [x] Codify
-    - [ ] Ouija
+    - [ ] Ouija (Hard)
 
     **Windows**
 
     - [x] Hospital
+    - [ ] Authority
+    - [ ] Manager
+    - [ ] Visual
 
 ## vulnhub
 
