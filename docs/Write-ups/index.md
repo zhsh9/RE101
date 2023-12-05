@@ -176,7 +176,7 @@
 
     **Windows**
 
-    - [ ] Hospital
+    - [x] Hospital
 
 ## vulnhub
 
