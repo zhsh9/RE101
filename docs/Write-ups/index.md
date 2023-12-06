@@ -1,5 +1,7 @@
 ## HackTheBox
 
+### OSCP Like Boxes
+
 ??? Tip "Linux Boxes"
 
     - [x] Lame
@@ -149,14 +151,7 @@
     - [ ] Search [Windows]
     - [ ] Undetected [Linux] (More like an IR box)
 
-### Other Boxes
-
-??? Tip "Starting point"
-
-    - [x] Archetype
-    - [x] Oopsie
-    - [x] Vaccine
-    - [x] Unified
+### Open Beta Season
 
 ??? Tip "Open Beta Season III"
 
@@ -178,8 +173,17 @@
 
     - [x] Hospital
     - [x] Authority
-    - [ ] Manager
+    - [x] Manager
     - [ ] Visual
+
+### Starting Boxes
+
+??? Tip "Starting point"
+
+    - [x] Archetype
+    - [x] Oopsie
+    - [x] Vaccine
+    - [x] Unified
 
 ## vulnhub
 
