@@ -167,7 +167,7 @@
     - [x] CozyHosting
     - [x] Analytics
     - [x] Codify
-    - [ ] Ouija (Hard)
+    - [x] Ouija (Hard)
 
     **Windows**
 
